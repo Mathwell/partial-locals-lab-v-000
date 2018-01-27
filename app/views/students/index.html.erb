@@ -1,5 +1,5 @@
 
 <input type="text" name="name" value="">
 <%Student.search(name).each do |student|%>
-  <%= render 'student', locals: => {student: @student} %>
+  <%= render 'student', locals: => {student: student} %>
   <%end%>
